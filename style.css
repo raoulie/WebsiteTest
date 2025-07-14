@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+.nav-matrix li.current {
+  display: none;
+}
+
 .skip-link {
   position: absolute;
   left: -999px;
