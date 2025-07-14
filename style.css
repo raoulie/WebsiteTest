@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+}
+
+.skip-link:focus {
+  left: 10px;
+  z-index: 999;
+}
+
+.nav-matrix ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #eee;
+  padding: 10px;
+  width: 200px;
+}
+
+.nav-matrix ul li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-matrix ul li a:hover {
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 20px;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #444;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.item img {
+  width: 100%;
+  border: 2px solid #444;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.item p {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
