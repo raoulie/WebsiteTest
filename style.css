@@ -10,11 +10,14 @@ body {
   background: #000;
   color: #fff;
   padding: 8px;
+  text-decoration: none;
 }
 
 .skip-link:focus {
   left: 10px;
   z-index: 999;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 .nav-matrix ul {
@@ -24,6 +27,10 @@ body {
   background-color: #eee;
   padding: 10px;
   width: 200px;
+}
+
+.nav-matrix li.current {
+  display: none;
 }
 
 .nav-matrix ul li a {
