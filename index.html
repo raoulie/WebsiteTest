@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Homepage</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to Main Content</a>
+    <h1>Dog Gallery</h1>
 
-  <nav class="nav-matrix">
-    <ul>
-      <li class="current"><a href="/WebsiteTest/index.html">Home</a></li>
-      <li><a href="/WebsiteTest/pages/gallery.html">Gallery</a></li>
-      <li><a href="/WebsiteTest/pages/contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
 
-  <header class="carousel">
-    <img src="/WebsiteTest/images/QoD1.jpg" alt="Business card design 1" />
-    <img src="/WebsiteTest/images/QoD2.jpg" alt="Business card design 2" />
-    <img src="/WebsiteTest/images/QoD3.jpg" alt="Business card design 3" />
-    <img src="/WebsiteTest/images/QoD4.jpg" alt="Business card design 4" />
-  </header>
+    <div class="preview-container">
+        <img class="preview" alt="Queen of diamonds design 1" src="/WebsiteTest/images/QoD1.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Queen of diamonds design 1" src="/WebsiteTest/images/QoD2.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Queen of diamonds design 1" src="/WebsiteTest/images/QoD3.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Queen of diamonds design 1" src="/WebsiteTest/images/QoD4.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Queen of diamonds engraved brushed steel" src="/WebsiteTest/images/QoD5.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Queen of diamonds engraved black background" src="/WebsiteTest/images/QoD6.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+    </div>
 
-  <main id="main">
-    <h1>Welcome to My Site</h1>
-    <p>This site showcases a carousel, gallery, and contact page using CSS3 techniques.</p>
-    <!-- Embedded SVG Graphic -->
-    <img src="/WebsiteTest/images/QoD.svg" alt="Quality of Design Graphic" />    
-  </main>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
