@@ -88,14 +88,51 @@ nav button:hover {
 }
 
 /* 🎯 Image styles */
-.ripple-img {
-  width: 25%;
-  max-width: 25%;
-  height: auto;
+.ripple-container {
   position: relative;
   display: inline-block;
+  width: 25%;
+  max-width: 25%;
   overflow: hidden;
 }
+
+.ripple-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ripple effect styles */
+.ripple-container::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 150, 255, 0.4);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+  animation: none;
+}
+
+.ripple-container:hover::before {
+  left: 50%;
+  top: 50%;
+  width: 300%;
+  height: 300%;
+  animation: ripple-hover 0.8s ease-out forwards;
+}
+
+@keyframes ripple-hover {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.6;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
 
 /* 💧 Ripple Hover Effect */
 .ripple-img::before {
